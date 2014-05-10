@@ -127,6 +127,7 @@ struct packet
 /* This hopefully moves to the bottom of the screen */
 #define EOS "\033[999H"
 
+void init_sockaddr_un(struct sockaddr_un *sockun, char *name);
 int attach_main(int noerror);
 int master_main(char **argv, int waitattach);
 
